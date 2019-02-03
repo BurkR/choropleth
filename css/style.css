@@ -1,0 +1,11 @@
+// 7. Set style function that sets fill color.md property equal to cell tower density
+function style(feature) {
+    return {
+        fillColor: setColor(feature.properties.CT_CNT),
+        fillOpacity: 0.4,
+        weight: 2,
+        opacity: 1,
+        color: '#b4b4b4',
+        dashArray: '4'
+    };
+}
